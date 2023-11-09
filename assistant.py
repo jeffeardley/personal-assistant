@@ -3,6 +3,7 @@ import assistant_helpers as helpers
 with open('instructions', 'r') as file:
   instructions = file.read()
 
+
 def main():
   usr_in = input("Enter your message: ")
   output = helpers.get_response(usr_in, instructions)
