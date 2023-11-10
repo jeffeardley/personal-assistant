@@ -11,6 +11,7 @@ def record_audio(duration=5, sample_rate=16000):
 
 def listen_for_command():
     r = sr.Recognizer()
+    print('Listening...')
     audio_data = record_audio()
     audio_sample = sr.AudioData(audio_data.tobytes(), sample_rate=16000, sample_width=2)
 
