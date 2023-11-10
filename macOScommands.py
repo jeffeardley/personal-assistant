@@ -22,7 +22,3 @@ def listen_for_command():
         print("Google Speech Recognition could not understand the audio")
     except sr.RequestError as e:
         print(f"Could not request results from Google Speech Recognition service; {e}")
-
-
-def main():
-    listen_for_command()
